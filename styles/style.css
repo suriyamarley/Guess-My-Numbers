@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
+
+
+*,
+*::after,
+*::before {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+
+}
+
+:root {
+  --clr-white: white;
+  --clr-black: black;
+  --amber-yellow: #ffbe0bff;
+  --orange-pantone: #fb5607ff;
+  --winter-pink: #ff006eff;
+  --blue-violet: #8338ecff;
+  --azure-blue: #3a86ffff;
+  box-shadow: 0px 22px 12px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  font-family: 'El Messiri', sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* global css */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container-card {
+  background-image: url(../images/maths.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 10vh;
+  margin: 0 auto;
+  background-color: black;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 22px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+ filter: opacity(30px);
+
+}
+
+.titile {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: black;
+}
+
+.description {
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color:black;
+}
+
+.random-guess {
+  font-size: 2rem;
+  font-weight: 600;
+  width: 20%;
+  margin: 0 auto;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid yellow;
+  background-color: yellow;
+  color: black;
+  border-radius: 10px;
+
+}
+
+.user-input {
+ border-radius: 2px;
+ text-align: center;
+  margin: auto;
+  padding:0.55rem 0.10rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: none;
+  
+}
+
+.btn-submit {
+  width: 50%;
+  margin: auto;
+  padding: 0.20rem 0.10rem;
+  background-color: var(--winter-pink);
+  border-color: var(--winter-pink);
+  border: 2px solid var(--winter-pink);
+  border-radius: 10px;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+
+.error-msg {
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: none;
+  color: red;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
